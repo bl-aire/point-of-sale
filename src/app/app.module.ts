@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +18,8 @@ import { OrderComponent } from './order/order.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

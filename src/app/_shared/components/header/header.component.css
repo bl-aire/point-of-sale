@@ -1,0 +1,10 @@
+.header {
+    border: 1px solid pink;
+    font-size: 1.2em;
+}
+
+.header ul {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr 2fr;
+    list-style-type: none;
+}
