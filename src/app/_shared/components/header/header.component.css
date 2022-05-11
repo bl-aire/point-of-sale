@@ -1,45 +1,48 @@
 .header {
     height: 10vh;
-}
-
-.header ul {
-    display: grid;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    grid-template-columns: 1fr 7fr 1fr 1fr 2fr;
     list-style-type: none;
 }
 
-.header ul li .button, .big-button {
+.header .button, .big-button {
     background-color: orange;
     color: white;
     padding: 0.5em;
     border-radius: 0.5em;
 }
 
-.header ul li a {
+.header a {
     text-decoration: none;
 }
 
-.header ul li form {
+.header form {
     width: 100%;
 }
 
-.header ul li form input {
-    padding: 0.7em;
+.header form input {
+    padding: 0.5em 0.7em;
     border-radius: 0.6em 0 0 0.6em;
-    width: 80%;
     border: none;
-    background-color: gainsboro;
+    background-color: rgba(235, 231, 231, 0.87);
+    margin-left: 2em;
 }
 
-.header ul li form button {
+.header form button {
     border-radius: 0 0.6em 0.6em 0;
     border: none;
     background-color: orange;
     color: white;
-    padding: 0.7em;
+    padding: 0.5em 0.7em;
 }
 
-.big-button{
-    background-color: rgba(243, 20, 20, 0.808);
+.icon{
+    margin-left: 1em;
 }
+
+.icon2{
+    margin-left: 0.5em;
+}
+
