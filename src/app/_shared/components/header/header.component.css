@@ -47,3 +47,16 @@
 }
 
 */
+
+.fill-space {
+    flex: 1 1 auto;
+}
+
+mat-toolbar {
+    height: 10vh;
+    margin-top: 1em;
+}
+
+mat-icon {
+    margin-right: 0.4em;
+}

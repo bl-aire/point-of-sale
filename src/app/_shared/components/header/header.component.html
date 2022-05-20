@@ -1,35 +1,27 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
-<div class="header">
-    <div>
-        <a href="" class="logo">Angie's Place</a>
-    </div>
-    <div>
-        <form action="">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit">
-                <i class="fa fa-search"></i>
-            </button>
-            <a href="" class="button icon">
-                <i class="fa fa-shopping-basket"></i>
-            </a>
-            <a href="" class="button icon2">
-                <i class="fa fa-bell"></i>
-            </a>
-        </form>
-    </div>
-    <div>
-        <i class="fa fa-ellipsis-v button"></i>
-    </div>
-</div>-->
+    crossorigin="anonymous">
+</script>-->
 
 <mat-toolbar>
     <span>
         Angie's Place
     </span>
+
+    <span class="fill-space"></span>
+
+    <mat-form-field class="search-form">
+        <input matInput placeholder="Search ..." class="input" type="search" ><!--[(ngModel)] = listFilter-->
+    </mat-form-field>
+
+    <span class="fill-space"></span>
+
+    <mat-icon>home</mat-icon>
+    <mat-icon matBadge="15" matBadgeColor="warn" matBadgeSize="small" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">shop</mat-icon>
+    <mat-icon>alarm</mat-icon>
 </mat-toolbar>
