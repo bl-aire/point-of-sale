@@ -16,12 +16,12 @@
     <span class="fill-space"></span>
 
     <mat-form-field class="search-form">
-        <input matInput placeholder="Search ..." class="input" type="search" ><!--[(ngModel)] = listFilter-->
+        <input matInput placeholder="search ..." class= "input" type="search" ><!--[(ngModel)] = listFilter-->
     </mat-form-field>
 
     <span class="fill-space"></span>
 
-    <mat-icon>home</mat-icon>
-    <mat-icon matBadge="15" matBadgeColor="warn" matBadgeSize="small" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">shop</mat-icon>
-    <mat-icon>alarm</mat-icon>
+    <mat-icon routerLink="home">home</mat-icon>
+    <mat-icon routerLink="order" matBadge="5" matBadgeColor="warn" matBadgeSize="small" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">shopping_cart</mat-icon>
+    <mat-icon>chat</mat-icon>
 </mat-toolbar>

@@ -54,9 +54,13 @@
 
 mat-toolbar {
     height: 10vh;
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 mat-icon {
     margin-right: 0.4em;
+}
+
+mat-form-field {
+    width: 50%;
 }
