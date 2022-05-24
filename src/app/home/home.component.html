@@ -8,58 +8,62 @@
             <span>View all</span>
         </div>
     </div>
-    <mat-chip-list aria-label="Dog selection">
+    <mat-chip-list aria-label="Food selection">
         <mat-chip>
             <mat-chip-avatar>
-                <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu" />
+                <img src="assets/images/free-icons-food/PNG/cheeseburger.png" alt="Photo of a burger" height="90%"/>
             </mat-chip-avatar>
-            Dog one
+            Burger
         </mat-chip>
         <mat-chip color="primary">
             <mat-chip-avatar>
-                <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu" />
+                <img src="assets/images/free-icons-food/PNG/donut.png" alt="Photo of a Donut" height="90%" />
             </mat-chip-avatar>
-            Dog two
+            Donuts
         </mat-chip>
         <mat-chip color="accent">
             <mat-chip-avatar>
-                <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu" />
+                <img src="assets/images/free-icons-food/PNG/ice-cupcake.png" alt="Photo of a Cupcake" height="90%" />
             </mat-chip-avatar>
-            Dog three
+            Cupcakes
         </mat-chip>
         <mat-chip>
             <mat-chip-avatar>
-                <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu" />
+                <img src="assets/images/free-icons-food/PNG/french-fries.png" alt="Photo of French fries" height="90%" />
             </mat-chip-avatar>
-            Dog one
+            Fries
         </mat-chip>
         <mat-chip color="primary">
             <mat-chip-avatar>
-                <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu" />
+                <img src="assets/images/free-icons-food/PNG/pizza.png" alt="Photo of a Pizza" height="90%" />
             </mat-chip-avatar>
-            Dog two
+            Pizza
         </mat-chip>
         <mat-chip color="accent">
             <mat-chip-avatar>
-                <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu" />
+                <img src="assets/images/free-icons-food/PNG/soft-ice-cream.png" alt="Photo of a Soft Icecream" height="90%" />
             </mat-chip-avatar>
-            Dog three
+            Icecream
         </mat-chip>
     </mat-chip-list>
 
     <mat-card class="example-card">
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <img mat-card-image src="assets/images/salad.jpg" alt="Photo of a Shiba Inu">
         <mat-card-header>
             <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            <mat-card-title>{{pageTitle}}</mat-card-title>
+            <mat-card-subtitle>$0.00</mat-card-subtitle>
         </mat-card-header>
+
         <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
+            <mat-button-toggle-group name="size" aria-label="Size">
+                <mat-button-toggle value="small">S</mat-button-toggle>
+                <mat-button-toggle value="medium">M</mat-button-toggle>
+                <mat-button-toggle value="large">L</mat-button-toggle>
+            </mat-button-toggle-group>              
+            <button mat-flat-button color="warn">Add</button>
         </mat-card-actions>
     </mat-card>
-
 </div>
 
 <router-outlet></router-outlet>
