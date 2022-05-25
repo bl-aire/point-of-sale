@@ -1,51 +1,76 @@
-{
-    "result" : "true",
-    "data" :
-    [
-        {
-            "category" : "icecream",
-            "product" : [
-                {
-                    "name": "vanilla",
-                    "price": 10.00,
-                    "image": "assets/images/salad.jpg"
-                },
-                {
-                    "name": "vanilla",
-                    "price": 10.00,
-                    "image": "assets/images/salad.jpg"
-                }
-            ]
-        },
-        {
-            "category" : "icecream",
-            "product" : [
-                {
-                    "name": "vanilla",
-                    "price": 10.00,
-                    "image": "assets/images/salad.jpg"
-                },
-                {
-                    "name": "vanilla",
-                    "price": 10.00,
-                    "image": "assets/images/salad.jpg"
-                }
-            ]
-        },
-        {
-            "category" : "icecream",
-            "product" : [
-                {
-                    "name": "vanilla",
-                    "price": 10.00,
-                    "image": "assets/images/salad.jpg"
-                },
-                {
-                    "name": "vanilla",
-                    "price": 10.00,
-                    "image": "assets/images/salad.jpg"
-                }
-            ]
-        }
-    ]
-}
+[
+
+    {
+      "category": 12,
+      "name": "Miniature Snacks",
+      "price": 20.00,
+      "image": "assets/images/salad.jpg"
+    },
+    {
+      "category": 12,
+      "name": "Miniature Snacks",
+      "price": 20.00,
+      "image": "assets/images/salad.jpg"
+    },
+    {
+        "category": 12,
+        "name": "Miniature Snacks",
+        "price": 20.00,
+        "image": "assets/images/salad.jpg"
+    },
+    {
+        "category": 12,
+        "name": "Miniature Snacks",
+        "price": 20.00,
+        "image": "assets/images/salad.jpg"
+    },
+    {
+        "category": 12,
+        "name": "Miniature Snacks",
+        "price": 20.00,
+        "image": "assets/images/salad.jpg"
+    },
+    {
+      
+        "category": 12,
+        "name": "Miniature Snacks",
+        "price": 20.00,
+        "image": "assets/images/salad.jpg"
+    },
+    {
+        "category": 12,
+        "name": "Miniature Snacks",
+        "price": 20.00,
+        "image": "assets/images/salad.jpg"
+    },
+    {
+        "category": 12,
+        "name": "Miniature Snacks",
+        "price": 20.00,
+        "image": "assets/images/salad.jpg"
+    },
+    {
+        "category": 12,
+        "name": "Miniature Snacks",
+        "price": 20.00,
+        "image": "assets/images/salad.jpg"
+    },
+    {
+        "category": 12,
+        "name": "Miniature Snacks",
+        "price": 20.00,
+        "image": "assets/images/salad.jpg"
+    },
+    {
+        "category": 12,
+        "name": "Miniature Snacks",
+        "price": 20.00,
+        "image": "assets/images/salad.jpg"
+    },
+    {
+        "category": 12,
+        "name": "Miniature Snacks",
+        "price": 20.00,
+        "image": "assets/images/salad.jpg"
+    }
+]

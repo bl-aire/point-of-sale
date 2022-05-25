@@ -12,10 +12,27 @@ export class HomeComponent implements OnInit {
   pageTitle: string = 'Category';
   errorMessage: string = '';
   sub: Subscription | any;
+  
+  private _listFilter:string = '';
+  get listFilter(): string {
+    return this._listFilter;
+  }
+  set listFilter(value:string){
+    this._listFilter = value;
+    console.log('In setter:', value);
+    this.filteredProducts = this.performFilter(value);
+  }
 
+  filteredProducts: IProduct[] = [];
   products: IProduct[] = [];
 
   constructor(private productsService: ProductsService) { }
+
+  performFilter(filterBy: string):IProduct[]{
+    filterBy = filterBy.toLocaleLowerCase(); //so its not case sensitive
+    return this.products.filter((product: IProduct) =>
+    product.name.toLocaleLowerCase().includes(filterBy));
+  }
 
   ngOnInit(): void {
     this.sub = this.productsService.getProducts().subscribe({
@@ -24,7 +41,7 @@ export class HomeComponent implements OnInit {
       },
       error: err => this.errorMessage = err
     });
-    //this.listFilter = 'cart';
+
   }
 
   ngOnDestroy(){
